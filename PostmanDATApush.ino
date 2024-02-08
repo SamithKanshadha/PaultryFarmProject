@@ -44,7 +44,7 @@ void setup() {
 
   String jsonData;
   serializeJson(jsonDoc, jsonData);
-
+  Serial.println(jsonData);
   postDataToPostmanAPI(jsonData);
 
   delay(5000);
